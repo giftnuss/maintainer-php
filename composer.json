@@ -1,0 +1,24 @@
+{
+    "name": "giftnuss/maintainer-php",
+    "description": "helps maintaining php projects",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Knapp",
+            "email": "news@young-workers.de"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/giftnuss/foodsharing"
+        }
+    ],
+    "require": {
+        "php": "^5.4||^7.0||^8.0",
+        "pheromone/phpcs-security-audit": "^2.0.1"
+    },
+    "require-dev": {
+        "foodsharing/foodsharing": "dev-main"
+    }
+}
