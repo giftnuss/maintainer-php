@@ -20,10 +20,12 @@
     ],
     "require": {
         "php": "^5.4||^7.0||^8.0",
-        "pheromone/phpcs-security-audit": "^2.0.1"
+        "pheromone/phpcs-security-audit": "^2.0.1",
+        "phpcompatibility/php-compatibility": "*"
     },
     "require-dev": {
         "foodsharing/foodsharing": "dev-main"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
