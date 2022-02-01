@@ -21,11 +21,20 @@
     "require": {
         "php": "^5.4||^7.0||^8.0",
         "pheromone/phpcs-security-audit": "^2.0.1",
-        "phpcompatibility/php-compatibility": "*"
+        "phpcompatibility/php-compatibility": "*",
+        "slevomat/coding-standard": "*",
+        "bmitch/churn-php": "^1.5"
+        
     },
     "require-dev": {
         "foodsharing/foodsharing": "dev-main"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }
