@@ -11,11 +11,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/giftnuss/foodsharing"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/giftnuss/icalBundle"
+            "url": "https://github.com/thephpleague/climate.git"
         }
     ],
     "require": {
@@ -24,10 +20,7 @@
         "phpcompatibility/php-compatibility": "*",
         "slevomat/coding-standard": "*",
         "bmitch/churn-php": "^1.5"
-        
-    },
-    "require-dev": {
-        "foodsharing/foodsharing": "dev-main"
+
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
