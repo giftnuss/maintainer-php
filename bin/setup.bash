@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#set -x
+set -x
 set -e
 
 if [ ! -d working ]; then
@@ -10,8 +10,13 @@ fi
 (
     cd working
     git fetch --all --tags --quiet
-    git branch -a | grep -w v2.6.1 >/dev/null
-    if [ $? -ne 0 ]; then
-       git checkout tags/2.6.1 -b v2.6.1
-    fi
+    git checkout tags/2.6.1 -b v2.6.1
+)
+
+diff -ruN files/composer.json.orig files/composer.json |\
+    patch working/composer.json
+
+(
+    cd working
+    composer install
 )
