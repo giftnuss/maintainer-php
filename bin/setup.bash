@@ -20,3 +20,13 @@ diff -ruN files/composer.json.orig files/composer.json |\
     cd working
     composer install
 )
+
+cp files/phpunit.xml working/
+
+patch -p1 working/vendor/phpunit/php-token-stream/src/Token.php \
+    <patches/add-new-tokens.patch
+
+patch -p1 working/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php \
+    <patches/prevent-count-null-exc.patch
+
+
