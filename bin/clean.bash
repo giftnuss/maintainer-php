@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
-if [ -d upstream ]; then
-    rm -rf upstream
-fi
+set -e
 
-if [ -d working ]; then
-    rm -rf working
-fi
+CLEAN="cover_db upstream working"
+
+for d in $CLEAN; do
+    if [ -d "$d" ]; then
+        echo "Removing $d..."
+        rm -rf "$d"
+    fi
+done
+
