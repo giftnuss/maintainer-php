@@ -1,0 +1,19 @@
+--- working/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php	2015-10-06 11:47:00.000000000 -0400
++++ files/File.php	2022-02-04 17:14:47.633093588 -0500
+@@ -310,13 +310,14 @@
+             $popoverTitle   = '';
+ 
+             if (array_key_exists($i, $coverageData)) {
+-                $numTests = count($coverageData[$i]);
++
+ 
+                 if ($coverageData[$i] === null) {
+                     $trClass = ' class="warning"';
+-                } elseif ($numTests == 0) {
++                } elseif (count($coverageData[$i]) == 0) {
+                     $trClass = ' class="danger"';
+                 } else {
++                    $numTests = count($coverageData[$i]);
+                     $lineCss        = 'covered-by-large-tests';
+                     $popoverContent = '<ul>';
+ 

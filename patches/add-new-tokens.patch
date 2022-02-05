@@ -1,0 +1,18 @@
+--- working/vendor/phpunit/php-token-stream/src/Token.php	2017-12-04 03:55:13.000000000 -0500
++++ files/Token.php	2022-02-04 07:22:50.900019743 -0500
+@@ -713,12 +713,15 @@
+ class PHP_Token_LOGICAL_OR extends PHP_Token {}
+ class PHP_Token_LOGICAL_XOR extends PHP_Token {}
+ class PHP_Token_LT extends PHP_Token {}
++class PHP_Token_MATCH extends PHP_Token {}
+ class PHP_Token_METHOD_C extends PHP_Token {}
+ class PHP_Token_MINUS extends PHP_Token {}
+ class PHP_Token_MINUS_EQUAL extends PHP_Token {}
+ class PHP_Token_MOD_EQUAL extends PHP_Token {}
+ class PHP_Token_MULT extends PHP_Token {}
+ class PHP_Token_MUL_EQUAL extends PHP_Token {}
++class PHP_Token_NAME_FULLY_QUALIFIED extends PHP_Token {}
++class PHP_Token_NAME_QUALIFIED extends PHP_Token {}
+ class PHP_Token_NEW extends PHP_Token {}
+ class PHP_Token_NUM_STRING extends PHP_Token {}
+ class PHP_Token_OBJECT_CAST extends PHP_Token {}
