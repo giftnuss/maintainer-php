@@ -8,12 +8,6 @@
             "email": "news@young-workers.de"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/thephpleague/climate.git"
-        }
-    ],
     "require": {
         "php": "^5.4||^7.0||^8.0",
         "pheromone/phpcs-security-audit": "^2.0.1",
