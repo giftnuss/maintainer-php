@@ -1,5 +1,12 @@
-composer.lock
-vendor/
-upstream/
-working/
+.bundle/
+_site/
 cover_db/
+docs/
+documentation/
+upstream/
+vendor/
+working/
+composer.lock
+Gemfile
+Gemfile.lock
+

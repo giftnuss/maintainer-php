@@ -2,7 +2,7 @@
 
 set -e
 
-CLEAN="cover_db upstream working"
+CLEAN="cover_db docs upstream working"
 
 for d in $CLEAN; do
     if [ -d "$d" ]; then
